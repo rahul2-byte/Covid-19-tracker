@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: fantasy;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.border {
+  border-radius: 5rem;
+}
+
+.quote {
+  font-size: 2.8rem;
+}
+
+body {
+  background-image: url("../../Image/Corona-virus-image.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body .intro-content-box {
+  height: 100vh;
+}
+
+body .intro-content-box .nav-bar {
+  height: 4em;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .intro-content-box .nav-bar .nav {
+  margin: auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .intro-content-box .nav-bar .nav .logo {
+  text-transform: uppercase;
+  letter-spacing: 0.01rem;
+}
+
+body .intro-content-box .nav-bar .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .intro-content-box .nav-bar .nav ul .link {
+  color: white;
+  display: block;
+  padding: 0.5em 1em;
+  margin: 0 2em;
+  border: none;
+  font-size: 1.1rem;
+  background-color: #5332e6;
+}
+
+body .content {
+  background-color: white;
+}
+
+body .first-content {
+  height: 50vh;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .first-content .intro-text {
+  font-weight: 600;
+  font-size: 2.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body .data-show-container {
+  width: 80%;
+  margin: auto;
+  background-color: transparent;
+}
+
+body .yestarday-cases,
+body .total-cases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3em 0;
+}
+
+body .yestarday-cases .last-day,
+body .yestarday-cases .total,
+body .total-cases .last-day,
+body .total-cases .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 15em;
+  height: 15em;
+  background-color: gray;
+  padding: 0.5em;
+}
+
+body .cases-info,
+body .data {
+  margin: 1.5em 0;
+  background-color: greenyellow;
+}
+/*# sourceMappingURL=Index.css.map */
