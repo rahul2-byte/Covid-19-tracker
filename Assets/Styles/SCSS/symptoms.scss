@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.border {
+  border-radius: 0.5em;
+}
+body {
+  /*
+    *=====//=====//=====//=====//=====//=====//=====//=====//
+    *=====//=====//Navigation Bar//=====//=====
+    *=====//=====//=====//=====//=====//=====//=====//=====//
+  */
+  .nav-bar {
+    background-color: darksalmon;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav {
+      margin: auto;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        text-transform: uppercase;
+        letter-spacing: 0.01rem;
+        flex: 3;
+        padding: 0.05rem 0;
+        color: white;
+      }
+      .nav-links {
+        justify-content: space-between;
+        flex: 2;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .link {
+            color: white;
+            display: block;
+            padding: 0.5em 1em;
+            margin-left: 2em;
+            border: rgb(83, 50, 230) solid 0.1rem;
+            font-size: 1.1rem;
+            background-color: rgb(83, 50, 230);
+          }
+          .link:hover {
+            color: white;
+            display: block;
+            padding: 0.5em 1em;
+            margin-left: 2em;
+            background-color: transparent;
+            border: rgb(83, 50, 230) solid 0.1rem;
+          }
+        }
+      }
+    }
+  }
+  /*
+    *=====//=====//=====//=====//=====//=====//=====//=====//
+    *=====//=====//content-box//=====//=====
+    *=====//=====//=====//=====//=====//=====//=====//=====//
+  */
+  .info {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .center-content {
+      height: 80%;
+      //   border: blueviolet solid 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+      .image-box {
+        height: 100%;
+        // border: black solid 5px;
+        min-width: 40%;
+        // background-color: darkseagreen;
+        img {
+          height: 100%;
+        }
+      }
+      .info-text {
+        padding: 1em;
+        .heading {
+          font-size: 3.5rem;
+          letter-spacing: 0.1em;
+        }
+        .info-describe {
+          font-size: 1.2rem;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+  }
+}

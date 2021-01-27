@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 .border {
-  border-radius: 5rem;
+  border-radius: 0.5rem;
 }
 .quote {
   font-size: 2.8rem;
@@ -24,9 +24,13 @@ body {
   background-position: center;
   .intro-content-box {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .nav-bar {
       height: 4em;
-      background: transparent;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -39,22 +43,56 @@ body {
         .logo {
           text-transform: uppercase;
           letter-spacing: 0.01rem;
+          flex: 3;
+          padding: 0.05rem 0;
+          color: cadetblue;
         }
-        ul {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .nav-links {
+          justify-content: space-between;
+          flex: 2;
+          ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-          .link {
-            color: white;
-            display: block;
-            padding: 0.5em 1em;
-            margin: 0 2em;
-            border: none;
-            font-size: 1.1rem;
-            background-color: rgb(83, 50, 230);
+            .link {
+              color: white;
+              display: block;
+              padding: 0.5em 1em;
+              margin-left: 2em;
+              border: rgb(83, 50, 230) solid 0.1rem;
+              font-size: 1.1rem;
+              background-color: rgb(83, 50, 230);
+            }
+            .link:hover {
+              color: white;
+              display: block;
+              padding: 0.5em 1em;
+              margin-left: 2em;
+              background-color: transparent;
+              border: rgb(83, 50, 230) solid 0.1rem;
+            }
           }
         }
+      }
+    }
+    .intro-text-box {
+      // background-color: violet;
+      padding: 2em 0;
+      width: 80%;
+      margin: auto;
+      .intro-text {
+        font-size: 6rem;
+        color: cornflowerblue;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .intro-slogan {
+        margin: 1em 0;
+        font-size: 1.5rem;
+        color: white;
+        letter-spacing: 0.08em;
+        padding-left: 0.5em;
       }
     }
   }
@@ -62,13 +100,14 @@ body {
     background-color: white;
   }
   .first-content {
-    height: 50vh;
+    // height: 50vh;
     width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     .intro-text {
+      margin: 2em 0;
       font-weight: 600;
       font-size: 2.5rem;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -80,6 +119,12 @@ body {
     width: 80%;
     margin: auto;
     background-color: transparent;
+    #country {
+      padding: 0.5em;
+      border: none;
+      outline: none;
+      font-size: 1.2rem;
+    }
   }
   .yestarday-cases,
   .total-cases {
