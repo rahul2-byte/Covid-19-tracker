@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: fantasy;
+  color: #555;
 }
 
 li {
@@ -133,7 +134,7 @@ body .intro-content-box .intro-text-box {
 
 body .intro-content-box .intro-text-box .intro-text {
   font-size: 6rem;
-  color: cornflowerblue;
+  color: #5332e6;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -148,9 +149,12 @@ body .intro-content-box .intro-text-box .intro-slogan {
 
 body .content {
   background-color: white;
+  color: #555;
 }
 
 body .first-content {
+  -webkit-clip-path: circle(radius at 1%, 20%);
+          clip-path: circle(radius at 1%, 20%);
   width: 80%;
   margin: auto;
   display: -webkit-box;
@@ -177,15 +181,43 @@ body .data-show-container {
   background-color: transparent;
 }
 
-body .data-show-container #country {
+body .data-show-container #select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .data-show-container #select-box #country {
+  margin: 1em;
   padding: 0.5em;
   border: none;
   outline: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
-body .yestarday-cases,
-body .total-cases {
+body .cases-desc {
+  border-radius: 0.5em;
+  background-color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 2em 0;
+  padding: 0.1em;
+}
+
+body .cases-desc h1 {
+  color: #555;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+body .cases {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,13 +226,10 @@ body .total-cases {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 3em 0;
+  margin: 1em 0;
 }
 
-body .yestarday-cases .last-day,
-body .yestarday-cases .total,
-body .total-cases .last-day,
-body .total-cases .total {
+body .cases .data-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,13 +245,17 @@ body .total-cases .total {
           flex-direction: column;
   width: 15em;
   height: 15em;
-  background-color: gray;
+  background-color: white;
   padding: 0.5em;
+}
+
+body .cases .data-box:hover {
+  border-radius: 0.5em;
+  border: #5332e6 solid 0.1rem;
 }
 
 body .cases-info,
 body .data {
   margin: 1.5em 0;
-  background-color: greenyellow;
 }
 /*# sourceMappingURL=Index.css.map */

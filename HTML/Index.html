@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Assets/Styles/css/Index.css">
-    <title>Covid-19</title>
+    <title>Covid-19 Tracker</title>
 </head>
 <body>
     <main>
@@ -44,6 +44,7 @@
         </div>
        </div>
        <div class="data-show-container">
+           <div id="select-box">
         <select id="country" class="border" name="country">
             <option value="0">select country</option>
             <option value="AF">Afghanistan</option>
@@ -299,33 +300,42 @@
             <option value="ZM">Zambia</option>
             <option value="ZW">Zimbabwe</option>
         </select>
-        <div class="yestarday-cases">
-          <div class="last-day">
+        </div>
+        <div class="cases-desc">
+           <h1>Yesterday Cases</h1> 
+        
+         <div class="cases">
+          <div class="data-box">
             <h1 class="data">N/A</h1>
-            <p class="cases-info">total yesterday cases</p>
+            <p class="cases-info">Cases</p>
           </div>
-         <div class="last-day">
+         <div class="data-box">
             <h1 class="data">N/A</h1>
-            <p class="cases-info">total yesterday recover</p>
+            <p class="cases-info">Recovered</p>
          </div>
-         <div class="last-day">
+         <div class="data-box">
             <h1 class="data">N/A</h1>
-            <p class="cases-info">total yesterday deaths</p>
+            <p class="cases-info">Deaths</p>
         </div>
        </div>
-       <div class="total-cases">
-        <div class="total">
+    </div>
+       <div class="cases-desc">
+           <h1>Total Cases</h1>
+      
+       <div class="cases">
+        <div class="data-box">
             <h1 class="data">N/A</h1>
-            <p class="cases-info">total cases</p>
+            <p class="cases-info">Cases</p>
         </div>
-        <div class="total">
+        <div class="data-box">
             <h1 class="data">N/A</h1>
-            <p class="cases-info">total recover</p>
+            <p class="cases-info">Recovered</p>
         </div>
-        <div class="total">
+        <div class="data-box">
             <h1 class="data">N/A</h1>
-            <p class="cases-info">total deaths</p>
+            <p class="cases-info">Deaths</p>
         </div>
+    </div>
     </div>
     </div>
     </main>
