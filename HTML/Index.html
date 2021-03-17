@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chart.js/2.6.0/chart.min.js"></script>
     <link rel="stylesheet" href="../Assets/Styles/css/Index.css">
     <title>Covid-19 Tracker</title>
 </head>
@@ -304,16 +305,16 @@
         <div class="cases-desc">
            <h1>Yesterday Cases</h1> 
         
-         <div class="cases">
-          <div class="data-box">
+         <div class="cases ">
+          <div class="data-box active-cases">
             <h1 class="data">N/A</h1>
             <p class="cases-info">Cases</p>
           </div>
-         <div class="data-box">
+         <div class="data-box recoverd-cases">
             <h1 class="data">N/A</h1>
             <p class="cases-info">Recovered</p>
          </div>
-         <div class="data-box">
+         <div class="data-box death-cases">
             <h1 class="data">N/A</h1>
             <p class="cases-info">Deaths</p>
         </div>
@@ -322,39 +323,45 @@
        <div class="cases-desc">
            <h1>Total Cases</h1>
       
-       <div class="cases">
-        <div class="data-box">
+       <div class="cases ">
+        <div class="data-box active-cases">
             <h1 class="data">N/A</h1>
             <p class="cases-info">Cases</p>
         </div>
-        <div class="data-box">
+        <div class="data-box recoverd-cases">
             <h1 class="data">N/A</h1>
             <p class="cases-info">Recovered</p>
         </div>
-        <div class="data-box">
+        <div class="data-box death-cases">
             <h1 class="data">N/A</h1>
             <p class="cases-info">Deaths</p>
         </div>
     </div>
     </div>
+    <div class="chart-box">
+        <canvas id="Corona-chart"></canvas>
+    </div>
     </div>
     </main>
     <footer>
+        <div class="footer-content">
         <div class="page-links">
             <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Site map</li>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Site Map</a></li>
+           
            </ul>
         </div>
         <div class="social-block">
             <ul>
-                <li>Github</li>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Twitter</li>
+                <li><a href="#">Github</a> </li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
             </ul>
         </div>
+    </div>
     </footer>
     <script src="../Assets/JavaScript/index.js"></script>
 </body>

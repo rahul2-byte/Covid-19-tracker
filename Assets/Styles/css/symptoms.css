@@ -30,6 +30,11 @@ body {
     *=====//=====//content-box//=====//=====
     *=====//=====//=====//=====//=====//=====//=====//=====//
   */
+  /*
+*=====//=====//=====//=====//=====//=====//=====//=====//
+*=====//=====//Footer//=====//=====
+*=====//=====//=====//=====//=====//=====//=====//=====//
+*/
 }
 
 body .nav-bar {
@@ -166,5 +171,10 @@ body .info .center-content .info-text .read-more {
 body .info .center-content .info-text .read-more a {
   color: #5332e6;
   text-decoration: underline;
+}
+
+body footer {
+  background-color: black;
+  color: white;
 }
 /*# sourceMappingURL=symptoms.css.map */
