@@ -3,20 +3,24 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: fantasy;
   color: #555;
 }
 
 li {
-  list-style-type: none;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #555;
+}
+
 .border {
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
 }
 
 body {
@@ -28,6 +32,11 @@ body {
   /*
     *=====//=====//=====//=====//=====//=====//=====//=====//
     *=====//=====//content-box//=====//=====
+    *=====//=====//=====//=====//=====//=====//=====//=====//
+  */
+  /*
+    *=====//=====//=====//=====//=====//=====//=====//=====//
+    *=====//=====//Project members//=====//=====
     *=====//=====//=====//=====//=====//=====//=====//=====//
   */
   /*
@@ -67,12 +76,12 @@ body .nav-bar .nav {
 
 body .nav-bar .nav .logo {
   text-transform: uppercase;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.1rem;
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
   padding: 0.05rem 0;
-  color: white;
+  color: cadetblue;
 }
 
 body .nav-bar .nav .nav-links {
@@ -107,7 +116,7 @@ body .nav-bar .nav .nav-links ul .link {
 }
 
 body .nav-bar .nav .nav-links ul .link:hover {
-  color: #555;
+  color: white;
   display: block;
   padding: 0.5em 1em;
   margin-left: 2em;
@@ -173,9 +182,70 @@ body .info .center-content .info-text .read-more a {
   text-decoration: underline;
 }
 
+body .profile-box {
+  margin: auto;
+  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body .profile-box .show-box {
+  margin: 1.5em 0;
+  height: 30rem;
+  width: 30rem;
+  border: #555 solid 0.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0.5em;
+}
+
+body .profile-box .show-box .img-box {
+  overflow: hidden;
+  margin: 2em;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100rem;
+}
+
+body .profile-box .show-box .img-box img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .profile-box .show-box .name-box {
+  margin: 0.5em;
+}
+
+body .profile-box .show-box .desc {
+  margin: auto;
+  width: 80%;
+  margin: 1em;
+}
+
+body .profile-box .show-box #strach-box {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
 body footer {
   background-color: black;
   color: white;
+  margin-top: 5em;
 }
 
 body footer .footer-content {
@@ -196,54 +266,35 @@ body footer .footer-content {
           align-items: center;
 }
 
-body footer .footer-content a:hover {
+body footer .footer-content .footer-sub-div ul {
+  padding: 0.5em;
+  margin: 0.5em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer .footer-content .footer-sub-div ul li {
+  margin-left: 2em;
+}
+
+body footer .footer-content .footer-sub-div ul a {
+  color: white;
+}
+
+body footer .footer-content .footer-sub-div ul a:hover {
   color: #5332e6;
   text-decoration: underline;
 }
-
-body footer .footer-content .page-links ul {
-  padding: 0.5em;
-  margin: 0.5em;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body footer .footer-content .page-links ul li {
-  margin-left: 2em;
-}
-
-body footer .footer-content .social-block ul {
-  padding: 0.5em;
-  margin: 0.5em;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body footer .footer-content .social-block ul li {
-  margin-left: 2em;
-}
-/*# sourceMappingURL=symptoms.css.map */
+/*# sourceMappingURL=about.css.map */
