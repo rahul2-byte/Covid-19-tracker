@@ -125,7 +125,7 @@ body .nav-bar .nav .nav-links ul .link:hover {
 }
 
 body .info {
-  height: 100vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,16 +185,38 @@ body .info .center-content .info-text .read-more a {
 body .profile-box {
   margin: auto;
   width: 70%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-body .profile-box .show-box {
+body .profile-box .description {
+  font-size: 3rem;
+  font-weight: 700;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: underline;
+}
+
+body .profile-box .members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .profile-box .members .show-box {
   margin: 1.5em 0;
   height: 30rem;
-  width: 30rem;
+  width: 25rem;
   border: #555 solid 0.1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +231,7 @@ body .profile-box .show-box {
   border-radius: 0.5em;
 }
 
-body .profile-box .show-box .img-box {
+body .profile-box .members .show-box .img-box {
   overflow: hidden;
   margin: 2em;
   height: 10rem;
@@ -217,29 +239,28 @@ body .profile-box .show-box .img-box {
   border-radius: 100rem;
 }
 
-body .profile-box .show-box .img-box img {
+body .profile-box .members .show-box .img-box img {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-body .profile-box .show-box .name-box {
+body .profile-box .members .show-box .name-box {
   margin: 0.5em;
 }
 
-body .profile-box .show-box .desc {
+body .profile-box .members .show-box .desc {
+  font-size: 1.3rem;
   margin: auto;
   width: 80%;
   margin: 1em;
 }
 
-body .profile-box .show-box #strach-box {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+body .profile-box .members .show-box:hover {
+  background-color: rgba(243, 243, 243, 0.452);
+  color: black;
+  -webkit-box-shadow: 25px 20px #636363;
+          box-shadow: 25px 20px #636363;
 }
 
 body footer {

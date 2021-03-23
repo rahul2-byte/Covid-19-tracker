@@ -16,7 +16,7 @@ a {
 }
 body {
   // max-width: 780px;
-  background-image: url("../../Image/Corona-virus-image.jpg");
+  background-image: url("../../Image/COVID_19.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +45,7 @@ body {
             letter-spacing: 0.1rem;
             flex: 3;
             padding: 0.05rem 0;
-            color: cadetblue;
+            color: black;
           }
           .nav-links {
             justify-content: space-between;
@@ -77,21 +77,23 @@ body {
         }
       }
       .intro-text-box {
-        // background-color: violet;
-        justify-content: center;
+        // position: relative;
+        // top: 10%;
+        // justify-content: center;
         padding: 2em 0;
-        // width: 80%;
+        width: 80%;
         margin: auto;
         .intro-text {
           font-size: 8rem;
-          color: rgb(241, 11, 11);
+          color: rgb(83, 50, 230);
           letter-spacing: 0.08em;
           text-transform: uppercase;
         }
         .intro-slogan {
           margin: 1em 0;
           font-size: 2.5rem;
-          color: white;
+          font-weight: 700;
+          color: black;
           letter-spacing: 0.08em;
           padding-left: 0.5em;
         }
@@ -120,6 +122,7 @@ body {
       width: 80%;
       margin: auto;
       background-color: transparent;
+      // clip-path: polygon(6% 4%, 99% 6%, 90% 51%, 99% 85%, 3% 100%, 10% 50%);
       #select-box {
         display: flex;
         justify-content: center;
@@ -191,6 +194,7 @@ body {
   }
   .chart-box {
     height: 50vh;
+    background-color: white;
   }
   /*
 *=====//=====//=====//=====//=====//=====//=====//=====//

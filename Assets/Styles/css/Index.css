@@ -19,7 +19,7 @@ a {
 }
 
 body {
-  background-image: url("../../Image/Corona-virus-image.jpg");
+  background-image: url("../../Image/COVID_19.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,7 +83,7 @@ body main .intro-content-box .nav-bar .nav .logo {
       -ms-flex: 3;
           flex: 3;
   padding: 0.05rem 0;
-  color: cadetblue;
+  color: black;
 }
 
 body main .intro-content-box .nav-bar .nav .nav-links {
@@ -127,16 +127,14 @@ body main .intro-content-box .nav-bar .nav .nav-links ul .link:hover {
 }
 
 body main .intro-content-box .intro-text-box {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 2em 0;
+  width: 80%;
   margin: auto;
 }
 
 body main .intro-content-box .intro-text-box .intro-text {
   font-size: 8rem;
-  color: #f10b0b;
+  color: #5332e6;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -144,7 +142,8 @@ body main .intro-content-box .intro-text-box .intro-text {
 body main .intro-content-box .intro-text-box .intro-slogan {
   margin: 1em 0;
   font-size: 2.5rem;
-  color: white;
+  font-weight: 700;
+  color: black;
   letter-spacing: 0.08em;
   padding-left: 0.5em;
 }
@@ -277,6 +276,7 @@ body main .data {
 
 body .chart-box {
   height: 50vh;
+  background-color: white;
 }
 
 body footer {
