@@ -198,7 +198,14 @@ body main .data-show-container #select-box #country {
 }
 
 body main .cases-desc {
+  opacity: 98%;
   overflow: hidden;
+  background: #d3cce3;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#e9e4f0), to(#d3cce3));
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 0.5em;
   background-color: white;
   height: -webkit-fit-content;
@@ -216,11 +223,11 @@ body main .cases-desc h1 {
 }
 
 body main .recoverd-cases:hover h1 {
-  color: green;
+  color: rgba(46, 235, 46, 0.829);
 }
 
 body main .death-cases:hover h1 {
-  color: red;
+  color: rgba(255, 0, 0, 0.644);
 }
 
 body main .cases {
@@ -239,6 +246,7 @@ body main .cases {
 }
 
 body main .cases .data-box {
+  border: 0.3rem solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,8 +273,7 @@ body main .cases .data-box .cases-info {
 }
 
 body main .cases .data-box:hover {
-  border-radius: 0.5em;
-  border: #5332e6 solid 0.1rem;
+  border-bottom: #5332e6 solid 0.3rem;
 }
 
 body main .cases-info,
